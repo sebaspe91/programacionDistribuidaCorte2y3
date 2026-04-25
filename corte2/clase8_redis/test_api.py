@@ -4,8 +4,6 @@ import redis
 
 app = FastAPI()
 
-app = FastAPI()
-
 r = redis.Redis(host='localhost', port=6379, decode_responses=True)
 
 @app.post("/crear_cita")
